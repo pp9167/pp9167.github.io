@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<currencyRates>
-  <rate currency="USD">1.23</rate>
-  <rate currency="EUR">0.89</rate>
-  <rate currency="JPY">132.42</rate>
-  <rate currency="KRW">1425.67</rate>
-  <rate currency="AUD">1.63</rate>
-</currencyRates>
