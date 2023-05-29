@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+   <title>Currency Converter</title>
+</head>
+<body>
+    //(2): line 39~48, 63~74
+    //(4): line 26, 37, 75~81
+    //(5): line 55~61
+   <h1>Currency Converter</h1>
+   <p> Select Currency and enter Amount to convert.</p>
+   <form>
+      <select id="from">
+         <option value="TWD">TWD</option>
+      </select>
+      <label>To:</label>
+      <select id="to">
+         <option value="USD">USD</option>
+         <option value="EUR">EUR</option>
+         <option value="JPY">JPY</option>
+         <option value="KRW">KRW</option>
+         <option value="AUD">AUD</option>
+      </select>
+      <label>Amount:</label>
+      <input type="text" id="amount" />
+      <button type="button" id="convert">Convert</button>
+      <button type="reset">Reset</button>
+      <p id="result"></p>
+      <p id="error" style="color: red; display: none;"></p>
+   </form>
+   <script>
+      const convert = document.getElementById("convert");
+      const result = document.getElementById("result");
+      const from = document.getElementById("from");
+      const to = document.getElementById("to");
+      const amount = document.getElementById("amount");
+      const error = document.getElementById("error");
+
+      // Load XML file
+      const xmlFile = 'currency-rates.xml';
+      const parser = new DOMParser();
+      let xmlDoc;
+
+      fetch(xmlFile)
+         .then(response => response.text())
+         .then(data => {
+            xmlDoc = parser.parseFromString(data, 'text/xml');
+         });
+
+      convert.addEventListener("click", function() {
+         let fromCurrency = from.value;
+         let toCurrency = to.value;
+         let amt = amount.value;
+
+         // Validate the input
+         if (!isFinite(amt) || amt.trim() === "") {
+            error.textContent = "Please enter a valid amount.";
+            error.style.display = "block";
+            amount.value = ""; // Reset the input
+            return;
+         }
+
+         // Retrieve exchange rate from XML
+         const rateElement = xmlDoc.querySelector(`rate[currency="${toCurrency}"]`);
+         if (rateElement) {
+            let rate = parseFloat(rateElement.textContent);
+            let total = rate * amt;
+            result.innerHTML = `${amt} ${fromCurrency} = ${total} ${toCurrency}`;
+            error.style.display = "none";
+         } else {
+            error.textContent = "Currency conversion rate not found.";
+            error.style.display = "block";
+            amount.value = ""; // Reset the input
+         }
+         // Reset functionality  
+         const resetButton = document.querySelector('button[type="reset"]');
+            resetButton.addEventListener("click", function() {
+            amount.value = ""; // Reset the input
+            result.innerHTML = "";
+            error.style.display = "none";
+      });
+
+      });
+   </script>
+</body>
+</html>
