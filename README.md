@@ -1,4 +1,4 @@
 # pp9167.github.io
 WP_Final_Exam
-\nrate.xml : store the rate of currencies
-\ndemo.html : web's code
+rate.xml : store the rate of currencies
+ demo.html : web's code
