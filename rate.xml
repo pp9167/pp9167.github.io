@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <currencyRates>
-  <rate currency="USD">0.03</rate>
-  <rate currency="EUR">0.89</rate>
-  <rate currency="JPY">132.42</rate>
-  <rate currency="KRW">1425.67</rate>
-   <rate currency="AUD">1.63</rate>
+  <rate currency="USD">0.033</rate>
+  <rate currency="EUR">0.030</rate>
+  <rate currency="JPY">4.59</rate>
+  <rate currency="KRW">43.17</rate>
+   <rate currency="AUD">0.050</rate>
 </currencyRates>
