@@ -4,8 +4,8 @@
    <title>Currency Converter</title>
 </head>
 <body>
-    <!(2): line 39~48, 63~74>
-    <!(4): line 26, 37, 75~81>
+   <!(2): line 39~48, 63~74>
+    <!(4): line 26, 37>
     <!(5): line 55~61>
    <h1>Currency Converter</h1>
    <p> Select Currency and enter Amount to convert.</p>
@@ -53,7 +53,7 @@
          let amt = amount.value;
 
          // Validate the input
-         if (!isFinite(amt) || amt.trim() === "") {
+         if (isNaN(amt) || amt.trim() === "") {
             error.textContent = "Please enter a valid amount.";
             error.style.display = "block";
             amount.value = ""; // Reset the input
@@ -72,14 +72,6 @@
             error.style.display = "block";
             amount.value = ""; // Reset the input
          }
-         // Reset functionality  
-         const resetButton = document.querySelector('button[type="reset"]');
-            resetButton.addEventListener("click", function() {
-            amount.value = ""; // Reset the input
-            result.innerHTML = "";
-            error.style.display = "none";
-      });
-
       });
    </script>
 </body>
