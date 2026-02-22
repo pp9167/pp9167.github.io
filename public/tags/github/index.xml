@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Peter&#39;s Terminal</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Peter&#39;s Terminal</description>
+    <title>Github on Peter&#39;s Terminal</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in Github on Peter&#39;s Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zH-Hant</language>
     <lastBuildDate>Mon, 23 Feb 2026 00:13:27 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo New Article</title>
       <link>http://localhost:1313/posts/my-new-post/</link>
       <pubDate>Mon, 23 Feb 2026 00:13:27 +0800</pubDate>
       <guid>http://localhost:1313/posts/my-new-post/</guid>
       <description>建立新文章 **Step 1: 進入 Hugo 專案根目錄新增 .md** hugo new posts/&amp;lt;article_name&amp;gt;.md Step 2: 撰寫內容&#xA;用偏好的編輯器 (Text Editor, VS Code) 打開並編輯&#xA;注意：發表前要將 draft 設定為 false（例如：draft: false 或 draft = false）。&#xA;Step 3: Preview (預覽)&#xA;hugo server -D Step 4: Push to GitHub git add . git commit -m &amp;#34;commitment description&amp;#34; git push origin main </description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Sun, 22 Feb 2026 18:27:59 +0800</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

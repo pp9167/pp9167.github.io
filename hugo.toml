@@ -10,7 +10,7 @@ paginate = 5
 [params]
   
   # options: orange, blue, red, green, pink
-  themeColoe = "blue"
+  themeColor = "blue"
   
   # full-screen-terminal 
   fullWidthTheme = true
@@ -29,3 +29,7 @@ paginate = 5
     name = "About"
     url = "/about"
     weight = 20
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
