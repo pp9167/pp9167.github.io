@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Peter&#39;s Terminal</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Peter&#39;s Terminal</description>
+    <title>Valorant on Peter&#39;s Terminal</title>
+    <link>http://localhost:1313/tags/valorant/</link>
+    <description>Recent content in Valorant on Peter&#39;s Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zH-Hant</language>
     <lastBuildDate>Thu, 26 Feb 2026 21:30:16 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/valorant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spatial Audio Tutorial</title>
       <link>http://localhost:1313/posts/spatial-audio-tutorial/</link>
       <pubDate>Thu, 26 Feb 2026 21:30:16 +0800</pubDate>
       <guid>http://localhost:1313/posts/spatial-audio-tutorial/</guid>
       <description>Valorant Foot Step Enhancer 我們需要兩個軟體: Equalizer APO &amp;amp; HeSuVi&#xA;Equalizer APO 安裝&#xA;開啟下載的installer 下載過程中會跳出視窗，選擇要讓Equalizer APO設定的輸出/輸入裝置 之後裝置有更動，像是更換硬體或者韌體，都要到 Eualizer APO 資料夾中的 Device Selector 中重新設定，每次設定完之後都要重新開機 HeSuVi 安裝&#xA;一起動installer就會問我們要不要將HeSuvi解壓縮到Equalizer APO的資料夾 ⇒ choose yes 會跳出cmd顯示解壓縮過程 然後就打開了 安裝過程到此結束&#xA;設定&#xA;先在HeSuVi中選擇自己想要用的空間音訊算法 根據Gemini的推薦，我選擇Sennheiser GSX (gsx.wav) 這時候再開啟 EqualizerAPO\Editor 將HeSuVi前面的電源打開，現在趕快打一把試試看吧! </description>
-    </item>
-    <item>
-      <title>Hugo New Article</title>
-      <link>http://localhost:1313/posts/my-new-post/</link>
-      <pubDate>Mon, 23 Feb 2026 00:13:27 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-new-post/</guid>
-      <description>建立新文章 Step 1: 進入 Hugo 專案根目錄新增 .md&#xA;hugo new posts/&amp;lt;article_name&amp;gt;.md Step 2: 撰寫內容&#xA;用偏好的編輯器 (Text Editor, VS Code) 打開並編輯&#xA;注意：發表前要將 draft 設定為 false（例如：draft: false 或 draft = false）。 Step 3: Preview (預覽)&#xA;hugo server -D Step 4: Push to GitHub&#xA;git add . git commit -m &amp;#34;commitment description&amp;#34; git push origin main </description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Sun, 22 Feb 2026 18:27:59 +0800</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
